@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Ubuntu', sans-serif;
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Work Sans', sans-serif;
+// font-family: 'Dosis', sans-serif;
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 16px;
+}
+.container-fluid {
+    width: 95%;
+}
+.todo-form {
+    box-shadow: 0 0 5px -1px #ccc;
+    padding: 1rem;
+}
+.todo-form .form-label {
+    position: relative;
+    background-color: #fff;
+    left: 7px;
+    padding: 0 4px;
+    font-size: 80%;
+    font-weight: bold;
+    color: #a7a7a7;
+    text-transform: uppercase;
+}
+.form-control {
+    margin-top: -16px;
+}
+input[type='text'].form-control {
+    // height: 25px;
+}
+.form-control:focus {
+    box-shadow: 0 0 0;
+}
+
+.slide-up {
+    animation: slide-up 0.4s ease;
+}
+
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.slide-in {
+    animation: slide-in 0.4s ease;
+}
+
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.toast {
+    overflow: inherit;
+}
+.react-date-picker__calendar{
+    width: 300px;
+    z-index: 1;
+}
+.react-date-picker {
+    // position: absolute;
+    // margin-top: 6px;    
+}
+.fixed-height {
+    height: calc(100vh - 80px);
+    overflow: auto;
+}
